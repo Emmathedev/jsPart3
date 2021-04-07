@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Part3 - Exo2</title>
+    <style>
+       
+        </style>
+</head>
+<body>
+    <p>Créez deux boutons. L'un pour cacher le texte, l'autre pour l'afficher</p>
+    
+    <p id="myP">Le bonheur est un état de satisfaction complète caractérisé par sa stabilité et sa durabilité. Il ne suffit pas de ressentir un bref contentement pour être heureux. Une joie intense n’est pas le bonheur. Un plaisir éphémère non plus. Le bonheur est un état global. L’homme heureux est comblé. Il vit une forme de plénitude. Sa situation est stable : elle présente un équilibre et seul un élément extérieur pourrait la modifier.
+        En tant qu’optimum de la vie humaine, le bonheur est universellement recherché. On le présente souvent comme le but le plus élevé de l’existence. Celui que tout homme cherche à atteindre, consciemment ou non.
+        Être heureux est une expérience individuelle et humaine. C’est l’homme qui connaît la félicité, pas l’animal. État stable et prolongé dans lequel on vit une insatisfaction totale, le malheur est l’opposé du bonheur. Il représente la situation fuite par chacun, que personne ne recherche volontairement.
+        La notion de bonheur est intimement liée au désir. Être heureux, ce serait réaliser tous ses désirs, ou du moins réaliser tous ses désirs « importants ». L’homme heureux accomplit les objectifs qu’il s’est fixé, ceux qui ont une valeur pour lui-même. Le bonheur est donc ancré dans l’individu, dans ses projets et ses représentations.
+        La conception du bonheur de l’un ne sera pas celle de l’autre. Les utopies politiques qui visent le bonheur de « tous » sont potentiellement dangereuses. Elles risquent d’imposer une vision particulière de ce qu’est le bonheur, d’agir de façon paternaliste, et de produire l’inverse de l’effet recherché.</p>
+
+
+
+<button type="button" onclick="hideElem()">Cacher</button>
+<button type="button" onclick="showElem()">Afficher</button>
+
+
+<script>
+function hideElem() {
+  document.getElementById("myP").style.visibility = "hidden"; 
+}
+
+function showElem() {
+  document.getElementById("myP").style.visibility = "visible"; 
+}
+</script>
+
+
+    <script>
+        function myBorder() {
+        document.getElementById("img").style.borderColor = "red";
+        }
+    </script>
+</body>
+</html>

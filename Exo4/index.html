@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Part3 - Exo4</title>
+   
+</head>
+<body>
+    <p>Créez deux input. Un bouton doit vérifier que les deux champs sont remplis identiquement.</p>
+    
+    <form>
+  
+          <input type="text" placeholder="Password" id="password" required>
+          <input type="text" placeholder="Confirm Password" id="password2" required>
+  
+          <button type="button" onclick="validatePassword()" >Confirm</button>
+  </form>
+
+<script>
+
+
+function validatePassword(){
+  var password = document.getElementById("password").value;
+  var password2 = document.getElementById("password2").value;
+  if (password == password2) {
+    document.getElementById("password").style.border = document.getElementById("password2").style.border = "5px solid green";
+  } 
+  else {
+    document.getElementById("password").style.border = document.getElementById("password2").style.border = "5px solid red";
+  }
+}
+
+</script>
+   
+</body>
+</html>
